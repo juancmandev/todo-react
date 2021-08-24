@@ -1,15 +1,15 @@
 import React from 'react';
-import { TodoCounter } from './TodoCounter';
-import { TodoSearch } from './TodoSearch';
-import { TodoList } from './TodoList';
-import { TodoItem } from './TodoItem';
-import { CreateTodoButton } from './CreateTodoButton';
+import { TodoCounter } from './components/TodoCounter';
+import { TodoSearch } from './components/TodoSearch';
+import { TodoList } from './components/TodoList';
+import { TodoItem } from './components/TodoItem';
+import { CreateTodoButton } from './components/CreateTodoButton';
 // import './App.css';
 
 const todos = [
   {
     text: 'Design landing page',
-    completed: false,
+    completed: true,
   },
   {
     text: 'Program landing page',
@@ -30,7 +30,11 @@ function App(props) {
 
       <TodoList>
         {todos.map((todo) => (
-          <TodoItem key={todo.text} text={todo.text} />
+          <TodoItem
+            key={todo.text}
+            text={todo.text}
+            completed={todo.completed}
+          />
         ))}
       </TodoList>
 
