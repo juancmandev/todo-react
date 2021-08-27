@@ -5,6 +5,7 @@ import { TodoSearch } from '../components/TodoSearch';
 import { TodoList } from '../components/TodoList';
 import { TodoItem } from '../components/TodoItem';
 import { CreateTodoButton } from '../components/CreateTodoButton';
+import { Modal } from '../components/Modal';
 
 function AppUI() {
   const {
@@ -34,6 +35,9 @@ function AppUI() {
           />
         ))}
       </TodoList>
+      <Modal>
+        <p>Teleport</p>
+      </Modal>
       <CreateTodoButton />
     </React.Fragment>
   );
