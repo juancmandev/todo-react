@@ -1,7 +1,7 @@
 form {
   width: 90%;
   max-width: 300px;
-  background-color: #fff;
+  background-color: #FFF5B7;
   padding: 33px 40px;
   display: flex;
   align-content: center;
@@ -35,7 +35,7 @@ textarea::placeholder {
 }
 
 textarea:focus {
-  outline-color: #61dafa;
+  outline-color: #00EAD3;
 }
 
 .TodoForm-buttonContainer {
@@ -60,10 +60,23 @@ textarea:focus {
 }
 
 .TodoForm-button--add {
-  background-color: #61dafa;
+  background-color: #00EAD3;
   box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.5);
+  transition: 0.1s ease;
+}
+
+.TodoForm-button--add:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease;
 }
 
 .TodoForm-button--cancel {
-  background: transparent;
+  background-color: #FF449F;
+  color: #fff;
+  transition: 0.1s ease;
+}
+
+.TodoForm-button--cancel:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease;
 }

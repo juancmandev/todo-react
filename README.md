@@ -1,8 +1,8 @@
 # React List
 
-A simple TODO's list to add, delete and filter some task.
+A simple TODO list to add, delete and filter some task.
 
-You can check the project [here]().
+You can check this project in action [here]().
 
 ## Getting Started with Create React App
 

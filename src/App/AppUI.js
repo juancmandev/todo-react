@@ -27,7 +27,6 @@ function AppUI() {
         {error && <p>Oh no, we have troubles</p>}
         {loading && <p>We're loading, please wait</p>}
         {!loading && !searchedTodos.length && <p>Create your first ToDo</p>}
-
         {searchedTodos.map((todo) => (
           <TodoItem
             key={todo.text}
@@ -38,7 +37,6 @@ function AppUI() {
           />
         ))}
       </TodoList>
-
       {!!openModal && (
         <Modal>
           <TodoForm />

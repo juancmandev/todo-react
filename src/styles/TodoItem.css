@@ -36,7 +36,7 @@
   left: 12px;
 }
 .Icon-check--active {
-  color: #4caf50;
+  color: #00EAD3;
 }
 
 .Icon-delete {
@@ -45,5 +45,5 @@
   right: 0;
 }
 .Icon-delete:hover {
-  color: red;
+  color: #FF449F;
 }
