@@ -5,7 +5,10 @@ import { TodoSearch } from '../components/TodoSearch';
 import { TodoList } from '../components/TodoList';
 import { TodoItem } from '../components/TodoItem';
 import { TodoForm } from '../components/TodoForm';
+import { TodosError } from '../components/TodosError';
+import { TodosLoading } from '../components/TodosLoading';
 import { CreateTodoButton } from '../components/CreateTodoButton';
+import { EmptyTodos } from '../components/EmptyTodos';
 import { Modal } from '../components/Modal';
 
 function AppUI() {
@@ -21,12 +24,12 @@ function AppUI() {
 
   return (
     <React.Fragment>
-      <TodoCounter />
+      <TodoCounter></TodoCounter>
       <TodoSearch />
       <TodoList>
-        {error && <p>Oh no, we have troubles</p>}
-        {loading && <p>We're loading, please wait</p>}
-        {!loading && !searchedTodos.length && <p>Create your first ToDo</p>}
+        {error && <TodosError error={error} />}
+        {loading && <TodosLoading />}
+        {!loading && !searchedTodos.length && <EmptyTodos />}
         {searchedTodos.map((todo) => (
           <TodoItem
             key={todo.text}
