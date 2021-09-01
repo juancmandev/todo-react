@@ -1,6 +1,6 @@
 # React List
 
-A simple TODO list to add, delete and filter some task.
+A simple TODO list to add, delete, filter and mark as completed some task.
 
 You can check this project in action [here](https://whenixd.github.io/todo-react/).
 
