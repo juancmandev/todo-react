@@ -4,7 +4,7 @@ import '../styles/TodoList.css';
 function TodoList(props) {
   const renderFunc = props.children || props.render;
   return (
-    <section>
+    <section >
       {props.error && props.onError()}
       {props.loading && props.onLoading()}
 
@@ -15,7 +15,7 @@ function TodoList(props) {
         props.onEmptySearchResults(props.searchText)}
 
       {props.searchedTodos.map(renderFunc)}
-
+        
       <ul>{props.children}</ul>
     </section>
   );

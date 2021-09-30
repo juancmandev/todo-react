@@ -3,9 +3,15 @@ import { withStorageListener } from './withStorageListener';
 
 function ChangeAlert({ show, toggleShow }) {
     if (show) {
-        return <p>Changes!</p>;
+        return (
+            <div>
+                <p>Changes!</p>
+                {console.log('changes!')}
+                <button onClick={() => toggleShow(false)}>Refresh</button>
+            </div>
+        );
     } else {
-        return <p>Changes?</p>
+        return <p>Changes?</p>;
     }
 }
 
